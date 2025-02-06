@@ -25,81 +25,6 @@
     </header>
     <div class="grid-container" id="mainContent">
         <img class="showTab" onclick=showMenuTab() src="./recources/images/menu open (1).png" alt="">
-        <nav>
-            <div class="nav-buttons">
-                <img onclick=hideMenuTab() src="./recources/images/menu open (1).png" alt="">
-                <img class="closetab" onclick=hideMenuTab() src="./recources/images/menu close.png" alt="">
-                <script>
-                    function hideMenuTab() {
-                        const nav = document.querySelector('nav')
-                        nav.style.display = 'none'
-                        const showTab = document.querySelector('.showTab')
-                        showTab.style.display = 'block'
-                    }
-
-                    function showMenuTab() {
-                        const nav = document.querySelector('nav')
-                        nav.style.display = 'block'
-                        const showTab = document.querySelector('.showTab')
-                        showTab.style.display = 'none'
-                    }
-                </script>
-            </div>
-            <div class="search">
-                <forms>
-                    <label for="searchBar"></label>
-                    <input type="text" list="nav list" name="searchBar" id="searchBar"
-                        placeholder="e.g. Web Development">
-
-                    <datalist id="nav list">
-                        <option value="" disabled selected>e.g. Web Development</option>
-                        <option value="About / More About Me..."></option>
-                        <option value="Contact / Contact Page"></option>
-                        <option value="Contact / Email"></option>
-                        <option value="My Portfolio / Web Design"></option>
-                        <option value="My Portfolio / Chatbots"></option>
-                    </datalist>
-
-                </forms>
-                <script>
-                    document.addEventListener("DOMContentLoaded", function () {
-                        const searchBar = document.getElementById("searchBar");
-
-                        // Remove the list when input is first focused
-                        searchBar.addEventListener("focus", function () {
-                            this.removeAttribute("list");
-                        });
-
-                        // Add the list back only after typing starts
-                        searchBar.addEventListener("input", function () {
-                            this.setAttribute("list", "nav list");
-                        });
-                    });
-                </script>
-            </div>
-            <h2>Navigation:</h2>
-            <hr>
-            <div class="dropdown">
-                <button>My Portfolio</button>
-                <div class="content">
-                    <a href="">Web Dev</a>
-                    <a href="">Chatbots</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button>About</button>
-                <div class="content">
-                    <a href="">About Me</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button>Contact</button>
-                <div class="content">
-                    <a href="">Contact Page</a>
-                    <a href="">Email</a>
-                </div>
-            </div>
-        </nav>
         <main>
             <div class="about-container">
                 <div class="about-items">
@@ -111,11 +36,13 @@
                             as a chef and I want change! My passion is computers and programming, this is the beginning
                             of my career & a new chapter. Please view continue down my portfolio to see what i can do!
                         </h3>
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quae fuga cum facilis consequatur doloribus perferendis. Quos natus nemo, blanditiis soluta ea sint quas perferendis illo nesciunt officia sit! Eum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas vel dolorum sapiente. Corrupti error doloremque reprehenderit aliquid dolore possimus saepe dignissimos non commodi. Provident reprehenderit porro distinctio voluptatibus fugiat laborum!</h3>
                     </div>
                 </div>
             </div>
 
             <div class="logos">
+                <h2>- Skills -</h2>
                 <div class="logos-slide">
                     <img src="./recources/images/HTML-Icon.png" alt="">
                     <img src="./recources/images/CSS-Icon.png" alt="">
@@ -140,10 +67,16 @@
                         <h3><span>Use Case:</span> A Chatbot for a real life restaurant I work at with built in functionality to improve customer experience. </h3>
                         <button>View Project</button>
                     </div>
-                    <!--<div class="item"></div>
-                    <div class="item"></div>
-                    <div class="item"></div>
-                    <div class="item"></div>-->
+                    <div class="item">5</div>
+                    <div class="item">4</div>
+                </div>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-items">
+                    <h2>Contact Me!</h2>
+                    <h3><span>Email:</span> jacksestanb@gmail.com</h3>
+                    <h3><span>Phone Number:</span> 07552228452</h3>
                 </div>
             </div>
         </main>
